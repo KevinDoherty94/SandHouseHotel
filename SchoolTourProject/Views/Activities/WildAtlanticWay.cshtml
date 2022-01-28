@@ -1,0 +1,207 @@
+﻿
+@{
+    ViewBag.Title = "WildAtlanticWay";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+@section Image{
+
+    <style>
+
+        #div-with-img {
+            background-image: url('../../Images/Donegal castle.jpg');
+            min-height: 900px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+
+
+        #title h2,#title section {
+            padding: 50px;
+            position: relative;
+            left: 730px;
+        }
+
+
+
+        tr, td {
+            padding: 50px;
+        }
+
+        td {
+            padding: 20px;
+        }
+
+        table{
+            width:100%;
+        }
+
+        .titleDiv {
+            width: 100%;
+            background-color: #334443;
+            color:white;
+        }
+
+        table img{
+            width:300px;
+            height:200px;
+        }
+
+      
+    </style>
+
+
+
+}
+
+<div id="section">
+    <div id="div-with-img">
+
+
+    </div>
+
+
+
+    <div id="title">
+
+
+
+        <h2>Experience the Wild Atlantic Way!</h2>
+
+        <section>
+
+            Donegal is a jewel in the crown of the Wild Atlantic Way.<br />
+            It is a county that is alive with magical, majestic sights<br />
+            and a ruggedly beautiful coastline where you will find many of its most outstanding treasures.<br />
+            By its crashing North Atlantic waters you will find the warmth of local hospitality, dreamy beaches,<br />
+            delicious fresh seafood in cosy pubs as well as the rich language, music and culture<br />
+            that defines the soul of the Wild Atlantic Way in this, its most northerly part.<br />
+            You have not lived until you have felt the scorch of sun on your back on a Donegal beach,<br />
+            rare as it might seem; or the warmth of a crackling turf fire’s warm embrace when you visit.<br />
+            Here are some of our Donegal highlights on the Wild Atlantic Way:
+        </section>
+
+    </div>
+
+    <table>
+        <tr id="tr1">
+            <td>
+                <img id="img1" src="~/Images/Aranmore island.jpg" />
+            </td>
+            <td>
+                <section>
+                    One of the best ways to see the coastline of the Wild Atlantic Way is from its islands.<br />
+                    Arranmore island is an idyllic, Gaeltacht island near Burtonport harbour in the Rosses off the north west coast of Donegal,<br />
+                    and is the largest inhabited island in the county. <br />
+                    There are memorable ways of making the most of your trip to the island which include diving,<br />
+                    deep sea angling, seal watching and the sea safari and marine heritage tour.
+                </section>
+
+            </td>
+        </tr>
+        <tr id="tr2">
+            <td>
+                <img id="img2" src="~/Images/glenveagh castle.jpg" />
+
+            </td>
+            <td>
+                <section>
+                    The majestic 19th century Glenveagh Castle is in the heart of the hauntingly beautiful Derryveagh mountains, one of five national parks on the Wild Atlantic Way.<br />
+                    The castle’s last private owner, philanthropist and art collector Henry McIlhenny,<br />
+                    summered in Ireland and enjoyed visits from Greta Garbo, Marilyn Monroe and Clark Gable. If it’s good enough for Hollywood royalty ...
+                </section>
+            </td>
+        </tr>
+        <tr id="tr3">
+            <td>
+                <img id="img3" src="~/Images/sliabh liag.jpg" />
+            </td>
+            <td>
+                <section>
+                    A visit to Ireland, never mind Donegal, would be seen in the half-light rather than its full glory if you don’t visit the country’s highest sea cliffs,<br />
+                    Sliabh Liag, a spectacular highlight of the Wild Atlantic Way and one of 15 signature discovery points along the route.<br />
+                    Located in the south west Donegal Gaeltacht, these are the highest accessible cliffs in Europe measuring 1,972 feet (601 metres).
+                </section>
+
+            </td>
+        </tr>
+        <tr id="tr4">
+            <td>
+                <img id="img4" src="~/Images/malin head.jpg" />
+            </td>
+            <td>
+                <section>
+                    This is the most northerly point in the country and its spectacular scenery makes it obvious why it was used as a location for filming parts of Star Wars Episode VIII,<br />
+                    with some of the filming on cliffs out from Banba's Crown, a headland where the Aurora Borealis or “Northern Lights” are often seen.<br />
+                    The name Banba derives from a mythical queen of Ireland which adds to the magic of Malin.
+                </section>
+            </td>
+        </tr>
+        <tr id="tr5">
+            <td>
+                <img id="img5" src="~/Images/pubs.jpg" />
+            </td>
+            <td>
+                <section>
+                    An unmissable stop on the Wild Atlantic Way is the iconic Leo’s Tavern in Meenaleck.<br />
+                    The late Leo Brennan, father of musicians Enya and Moya Brennan from Clannad, <br />
+                    was the inimitable proprietor of this famous pub and it is synonymous with Irish traditional music, attracting huge stars over the years.<br />
+                    Leo’s still hosts regular music and trad nights and Moya herself is there with her event night “Clubeo”<br />
+                    once a month for a wonderful night of talented songwriters and musicians, and usually a surprise guest or two.
+                </section>
+            </td>
+        </tr>
+        <tr id="tr6">
+            <td>
+                <img id="img6" src="~/Images/grianan of aileach.jpg" />
+            </td>
+            <td>
+                <section>
+                    This ancient stone fort sits on top of Greenan Mountain at the gateway of Inishowen at Burt and is a direct link back to the myth and magic of the Wild Atlantic Way.<br />
+                    Believed to have been constructed in the 8th and 9th century, you will also find a small stone cairn close by that is said to be a burial monument from the early Bronze Age.<br />
+                    It’s a windy spot but well worth the trouble to reach as the view from its stone walls is incredible.<br />
+                    At least five counties lie stretched before you and you will get a fantastic view of the full expanse of Lough Swilly and Lough Foyle and the mountains and hills of Donegal on the horizon.
+                </section>
+            </td>
+        </tr>
+    </table>
+    <br /><br />
+</div>
+
+@section Script{
+
+
+
+    <script src="~/Scripts/WildAtlanticWay.js"></script>
+
+}
+
+<br />
+<br />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

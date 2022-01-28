@@ -1,0 +1,98 @@
+﻿@model SchoolTourProject.Models.Activity
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+@section Image{
+
+    <style>
+
+        #Bookingcreate {
+            justify-content: center;
+        }
+
+        #BookingH1 {
+            font-weight: bold;
+        }
+        
+    </style>
+}
+
+
+
+<div id="Bookingcreate" class="container" style="margin-top:70px">
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <div id="BookingH1" class="lead">Upload your activity here</div>
+        </div>
+
+    </div>
+
+    @using (Html.BeginForm("Create", "BookingActivities", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+
+            <hr />
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group">
+                @Html.LabelFor(model => model.ActivityName, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.ActivityName, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.ActivityName, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Image, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+
+                    <input type="file" name="ImageFileInput" id="ImageFileInput" />
+
+                    @Html.ValidationMessageFor(model => model.Image, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.BookingID, "BookingID", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.DropDownList("BookingID", null, htmlAttributes: new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.BookingID, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Create" class="btn btn-success" />
+                    @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-primary" })
+                </div>
+            </div>
+
+            <br />
+
+            <div class="form-group">
+                <strong>*When selecting and activity please only use the activities below</strong><br />
+                <br />
+                Surfing<br />
+                Cycling<br />
+                Indoor Swimming<br />
+                Tennis<br />
+                Beach Volleyball<br />
+                Sea Swimming<br />
+                Snorkeling<br />
+                Site Seeing
+
+
+            </div>
+        </div>
+    }
+
+
+
+
+</div>
+

@@ -1,0 +1,227 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="~/CSS/StyleSheet1.css" rel="stylesheet" />
+
+    <style>
+        #div-with-img {
+            background-image: url(../Images/SandHouseImg.JPG);
+            min-height: 800px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #title h2, #title section {
+            padding: 30px;
+            position: relative;
+            left: 500px;
+        }
+
+        table {
+            width: 100%;
+          
+        }
+
+        tr, td {
+            padding: 20px;
+           
+        }
+
+        .titleDiv {
+            width: 100%;
+            background-color: #334443;
+            color: white;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+
+        <span class="navbar-brand">Sand House Hotel</span>
+
+        <ul class="navbar-nav">
+
+            <li class="nav-item">
+
+                @Html.ActionLink("Home", "Home", "Home", null, new { @class = "nav-link" })
+
+            </li>
+
+            <li class="nav-item">
+
+                @Html.ActionLink("Upload an activity", "Create", "BookingActivities", null, new { @class = "nav-link" })
+
+            </li>
+
+            <li class="nav-item">
+
+                @Html.ActionLink("Book", "Create", "Bookings", null, new { @class = "nav-link" })
+
+            </li>
+
+
+
+            <li class="nav-item dropdown" style="margin-left:1800px">
+
+                <div class="dropdown">
+
+                    <button type="button" class="btn btn-primary bg-dark dropdown-toggle" data-toggle="dropdown">
+                        Activities and Places to see
+                    </button>
+
+                    <div class="dropdown-menu">
+                        @Html.ActionLink("Surfing", "Surfing", "Activities", null, new { @class = "dropdown-item" })
+                        @Html.ActionLink("Site Seeing", "SiteSeeing", "Activities", null, new { @class = "dropdown-item" })
+                        @Html.ActionLink("Wild Atlantic Way", "WildAtlanticWay", "Activities", null, new { @class = "dropdown-item" })
+
+                    </div>
+
+                </div>
+
+            </li>
+
+        </ul>
+    </nav>
+
+    <div id="div-with-img">
+
+
+    </div>
+
+    <div id="title">
+        <h2>Sandhouse Hotel Donegal & Marine Spa</h2>
+        <section>
+
+            A sanctuary of peace and harmony, we welcome you for an intimate and personalised luxury experience of Donegal, on the spectacular sandy beachfront of Rossnowlagh.<br />
+            Our location along the world-famous Wild Atlantic Way makes us a truly great reason to stay with us, book a spa getaway or book a unique venue for an event.<br />
+            Our rooms offer a sophisticated classic décor setting a refined and restful ambience for your stay.<br />
+            The Sandhouse Hotel is also the perfect venue for all your business needs with state of the art facilities for high-level conferences, business meetings,<br />
+            and corporate entertainment.Enjoy fine dining in our Glasshouse Restaurant overlooking Donegal bay. Experience an afternoon of indulgence in the Marine Spa.<br />
+            Order drinks in Surfers Bar or Durnish Bar. Listen to the sound of the Atlantic waves on a lazy morning.Whether you are looking to book a romantic stay, family break<br />
+            or you are traveling for work, our 4-star elegant hotel is the right answer for you.
+        </section>
+    </div>
+
+
+    <table>
+
+        <tr id="tr1">
+
+            <td>
+                    <img id="img1" width="300" height="200" src="~/Images/Rosnowlagh.jpg" />
+            </td>
+            <td>
+                <section>
+                    <h3>Rosnowlagh Beach</h3>
+                    
+                        The sand House Hotel is situated on the lovely beach Rosnowlagh located approximately 8 kilometres south of Donegal Town, County Donegal.<br />
+                        Rossnowlagh Beach stretches from the cliffs at Coolmore in the south, to the rock outcrop at Carrickfad and is renowned as one of Ireland's main surfing beaches.<br />
+                        Has soft, golden sand and exceptional views, Rossnowlagh is very popular with both local residents and tourists.<br />
+                        The surf here is perfect for beginners and the local surf school offers tuition and equipment rental.<br />
+                        As well as surfers, this beach also attracts walkers, swimmers and sailors.
+                   
+                </section>
+
+            </td>
+            <td>
+
+            </td>
+
+        </tr>
+        <tr id="tr2">
+            <td>
+               
+                    <img id="img2" width="300" height="200" src="~/Images/pizzaRestaurant.jpg" />
+              
+
+            </td>
+
+            <td>
+                <section>
+
+                    <h3>The Surfers Bar/Restaurant</h3>
+
+                   
+                        Surfers Bar is the perfect place to relax after a long day, whether you’ve spent it in the office, on the water or discovering the local Donegal sights.<br />
+                        Open to the general public, it is very popular with beach walkers, local characters and surfers.<br />
+                        Music entertainment is provided in this bar at weekends. All major sporting events are shown live.<br />
+                        With a relaxing ambiance and plenty of comfortable sofas, it’s the perfect place to sit down and chat over a cocktail or glass of wine.<br />
+                        Take in the famous Rossnowlagh sunsets over dinner and drinks on our brand new beach terrace overlooking Donegal Bay.<br />
+                        Keep up to date with current events and music entertainment in the bar here.
+                    
+                </section>
+            </td>
+            <td>
+
+            </td>
+
+        </tr>
+        <tr id="tr3">
+
+            <td>
+                    <img id="img3" width="300" height="200" src="~/Images/Restaurant.jpg" />
+                
+            </td>
+
+            <td>
+                <section>
+                    <h3>The Glasshouse Restaurant, Donegal</h3>
+                   
+                        The intimate Glasshouse Restaurant overlooks Rossnowlagh Beach and the Atlantic Ocean.<br />
+                        Enjoy fine cuisine prepared by Resident Chef John Mc Garrigle while the sun sets its gentle rays glinting over the waves. <br />
+                        This is a dining experience which will never be forgotten.<br />
+                        Resident Chef John Robert McGarrigle presides over the cuisine, bringing fifteen years of experience in the Sandhouse and his familiarity with local farmers,<br />
+                        fishermen and producers to create dishes and menus which are defined by their locally sourced, wonderfully fresh ingredients.<br /><br />
+
+                </section>
+            </td>
+
+            <td>
+                
+                    <a href="https://sandhouse.ie/wp-content/uploads/2021/03/Dinner-Menu-2020-v2.pdf">
+                        <img id="img4" heigh="100" width="200" src="~/Images/Restaurant Menu.jpg" />
+                    </a>
+               
+            </td>
+
+        </tr>
+
+    </table>
+  
+<br />
+    <footer class="bg-dark">
+
+        <div id="copyright"> Copyright @DateTime.Now.Year &copy; Sand House Hotel </div>
+
+        <div class="socialMedia">
+            <a href="https://www.facebook.com/TheSandhouseHotel"> <img height="30" width="30" src="~/Images/facebook.png" /></a>
+
+        </div>
+
+        <div class="socialMedia">
+            <a href="https://www.instagram.com/sandhousehotel/"> <img height="30" width="30" src="~/Images/instagram.png" /></a>
+        </div>
+    </footer>
+
+
+    <script src="~/Scripts/jquery-3.6.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="~/Scripts/Home.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,249 @@
+﻿
+@{
+    ViewBag.Title = "Surfing";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+@section Image{
+
+    <style>
+
+        #div-with-img {
+            background-image: url('../../Images/Surfing.jpg');
+            min-height: 900px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #iframe1, #div-rosnowlagh, #div-bundoran{
+            display:inline-block;
+            padding:50px;
+        }
+
+        #div-rosnowlagh{
+            position:relative;
+            bottom:160px;
+        }
+        #div-bundoran {
+            position: relative;
+            bottom: 65px;
+        }
+
+        #surfing-in-donegal {
+            display: inline-block;
+            padding: 40px;
+            position: relative;
+            top: 10px;
+        }
+
+            #surfing-in-donegal iframe, #surfing-in-donegal section {
+                padding: 10px;
+
+               
+            }
+
+        #surfers{
+            padding:40px;
+        }
+
+        #surfers img {
+            height: 200px;
+            width: 300px;
+        }
+
+        td{
+            padding:50px;
+        }
+
+        #title h2, #title section {
+            padding: 50px;
+            position: relative;
+            left: 730px;
+        }
+
+        .titleDiv {
+            width: 100%;
+            background-color: #334443;
+            color: white;
+        }
+
+        #iframe2, #surf-learning {
+            display: inline-block;
+            padding:40px;
+        }
+
+        #surf-learning{
+            position:relative;
+            bottom:110px;
+        }
+
+        #btn{
+            margin-top:50px;
+        }
+
+
+
+       
+
+       
+    </style>
+
+}
+
+
+<div id="div-with-img">
+
+</div>
+
+<div id="title">
+
+    <h2>Lets go surfing!</h2>
+
+    <section>
+
+        Have great fun surfing with your buddies on the lovely and scenic beach Rosnowlagh.<br />
+        Only a short walk from the sandhouse hotel, is one of Irelands most gorgeous beaches.<br />
+        Here you can catch some amazing waves, learn to surf from our friends at Rosnowlagh Surf School or if you<br />
+        already know how too, no problem. They also supply rentals and you can browse their shop for some new gear.<br />
+        <strong>Surfs up dudes!</strong>
+
+    </section>
+
+</div>
+
+
+<div id="surfing-in-donegal">
+
+    <iframe id="iframe1" width="500" height="400" src="https://www.youtube.com/embed/9ildezKaqtU" title="YouTube video player"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+    </iframe>
+
+    <div id="div-bundoran">
+        <h3>Bundoran – Ireland’s Surf Capital!!</h3>
+        <section>
+
+            Only a short drive from the sandhouse hotel you will find a surfing paradise in Bundoran.<br />
+            Surfing has become synonymous with Bundoran in the past number of years.<br />
+            Its growing popularity has helped to extend the normal Easter to September<br />
+            holiday season to all year round as surfers travel from all over the country<br />
+            and all over the world to experiencethe diverse<br />
+            natural amenities that Ireland’s Premier Seaside Resort has to offer.<br />
+            Any weekend in any month, be it the middle of summer or the dead of winter,<br />
+            you’ll generally find somewhere to go surfing in Bundoran or its surrounds<br />
+            with countless beach and reef breaks to be found in close proximity.
+
+        </section>
+    </div>
+
+    <div id="div-rosnowlagh">
+        <h3>Rosnowlagh surfing</h3>
+        <section>
+
+            <strong>
+                Feel the Atlantic Tide draw in around your toes<br />
+                before plunging yourself into its enticing embrace here on idyllic Rossnowlagh Beach
+            </strong>
+            <br />
+            Rossnowlagh beach caters for all surfers, from first time beginners to intermediate experienced surfers.<br />
+            With gentle crumbling waves and an occassional punchy beach break, <br />
+            Rossnowlagh is the perfect beach to start you off surfing!!<br />
+            No rips, shore breaks or scary sea creatures….
+
+        </section>
+    </div>
+
+
+
+
+
+
+</div>
+
+
+
+
+<div id="surfers">
+
+    <h3>Ireland is home to some fantastic surfers</h3>
+
+    <table>
+
+
+        <tr id="tr1">
+
+            <td>
+                <img src="~/Images/conor maguire surfing.jpg" />
+            </td>
+            <td>
+                <section>
+                    <h3>Conor Maguire</h3><br />
+
+                    You may not know the name Conor Maguire, but there’s a chance you’re familiar with his work because,<br />
+                    if there’s a video of a big wave being surfed in Ireland going viral, in all likelihood it’s Maguire on the board.<br />
+                    Since 2015, the Bundoran native has been nominated for no fewer than six World Surf League Big Wave awards,<br />
+                    becoming the youngest European athlete to ever be shortlisted.
+                </section>
+            </td>
+        </tr>
+        <tr id="tr2">
+            <td>
+                <img src="~/Images/Peter Conroy surfing.jpg" />
+            </td>
+            <td>
+                <section>
+                    <h3>Peter Conroy</h3><br />
+                    Peter was born and raised close to Ennis in County Clare on Ireland's beautiful west coast.<br />
+                    From a young age Peter was very involved in swimming and lifesaving, competing in both disciplines.<br />
+                    He began surfing at the same time as he started lifeguarding on the beaches of Clare at the age of 16.<br />
+                    From there a love of big waves developed as he challenged himself to go bigger every time a heavy swell rolled in.
+                </section>
+            </td>
+        </tr>
+
+    </table>
+
+</div>
+
+<div id="surf-school-div">
+
+    <div id="iframe2">
+        <iframe width="500" height="400" src="https://www.youtube.com/embed/g-UM_wGp_Vc" title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+    </div>
+
+    <div id="surf-learning">
+        <h3>Fancy learning how to surf on your holidays</h3>
+
+        <section>
+            Rosnowlagh surf school is the place to be.<br />
+            A friendly surf school providing high quality surf lessons<br />
+            and rentals on the beautiful Rossnowlagh beach in Co. Donegal.<br />
+            Or pop in and browse there brilliant surfing gear and apparel.
+
+        </section>
+
+        <a id="btn" href="https://rossnowlaghsurfschool.com/" class="btn btn-info" role="button">Go to surf school website</a>
+    </div>
+
+</div>
+
+@section Script{
+
+
+    <script src="~/Scripts/Surfing.js"></script>
+  
+
+}
+
+
+
+
+
+
+
+
+
+

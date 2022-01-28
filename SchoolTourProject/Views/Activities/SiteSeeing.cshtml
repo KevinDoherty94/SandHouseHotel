@@ -1,0 +1,241 @@
+﻿
+@{
+    ViewBag.Title = "Site Seeing";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+@section Image{
+
+    <style>
+
+        #div-with-img {
+            background-image: url('../../Images/binoculars.jpg');
+            min-height: 900px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        table {
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+
+        #title {
+            margin-top: 50px;
+            margin-left: 1000px;
+            font-size: large;
+            font-weight: bold;
+        }
+
+        td {
+            padding: 150px;
+        }
+
+        tr{
+            padding:50px;
+        }
+
+        .space {
+            margin-bottom: 50px;
+        }
+
+        .changeText {
+            font-size: Large;
+            background-color: #334443;
+            color: white;
+            border-radius:20px;
+            padding:20px;
+        }
+
+
+    </style>
+
+}
+
+<div id="div-with-img">
+
+</div>
+
+<h2 id="title">Have a look at all the sites of Donegal!</h2>
+
+
+<table>
+    <tr>
+        <td>
+
+            <div class="space">
+                <img id="img1" width="400" height="300" src="~/Images/Donegal castle.jpg" />
+            </div>
+
+            <div id="span1">
+                <strong>Donegal Town</strong><br />
+
+                Donegal Town is a fairytale of a place,<br />
+                featuring a charming harbour,<br />
+                serene beaches and stoic stone remains of centuries past.
+            </div>
+
+        </td>
+        <td>
+
+
+            <div class="space">
+                <img id="img2" width="400" height="300" src="~/Images/slieve league.jpg" />
+            </div>
+
+            <div id="span2">
+                <strong>Slieve League</strong><br />
+
+                The highest sea cliffs in Europe,<br />
+                Slieve League is a breathtaking Peninsula<br />
+                just a 1 hour drive from the Sandhouse Hotel.<br />
+                This location is stunning in any weather.
+            </div>
+
+
+
+        </td>
+        <td>
+
+            <div class="space">
+                <img id="img3" width="400" height="300" src="~/Images/Rosnowlagh.jpg" />
+            </div>
+
+            <div id="span3">
+                <strong>Rossnowlagh</strong><br />
+
+                Right on our doorstep, Rossnowlagh beach<br />
+                is one of the largest and most popular beaches in Donegal.<br />
+                Grab a board and go for a surf <br />
+                or just enjoy a leisurely walk
+                and take in the sights and sounds.
+            </div>
+
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+
+            <div class="space">
+                <img id="img4" width="400" height="300" src="~/Images/Sea sessions Bundoran.jpg" />
+            </div>
+
+            <div id="span4">
+                <strong>Bundoran</strong><br />
+
+                Just a short drive from Sandhouse Hotel,<br />
+                Bundoran is a bustling seaside town <br />
+                with exciting nightlife and summer festivals.
+            </div>
+
+        </td>
+        <td>
+
+            <div class="space">
+                <img id="img5" width="400" height="300" src="~/Images/tullan strand.jpg" />
+            </div>
+
+            <div id="span5">
+                <strong>Tullan Strand</strong><br />
+                Tullan Strand, one of Donegal’s renowned surf beaches,<br />
+                is a 2km beach that is very popular surfing spot<br />
+                within walking distance from Bundoran.
+            </div>
+
+
+
+        </td>
+        <td>
+
+            <div class="space">
+                <img id="img6" width="400" height="300" src="~/Images/Ballyshannon.jpg" />
+            </div>
+
+            <div id="span6">
+                <strong>Ballyshannon</strong><br />
+
+                Explore charming Ballyshannon in County Donegal.<br />
+                Recognised as Ireland’s Oldest Town, Ballyshannon<br />
+                is a historical treasure chest with amazing Traditional<br />
+                and Rock and blues Festivals during the Summer.
+            </div>
+
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+
+            <div class="space">
+                <img id="img7" width="400" height="300" src="~/Images/Mullaghmore.jpg" />
+            </div>
+
+            <div id="span7">
+                <strong>Mullaghmore Head</strong><br />
+
+                Mullaghmore Head in County Sligo is a very special place<br />
+                and a deserving Signature Wild Atlantic Way Discovery Point.<br />
+                It is a famous surfing destination with the stunning Classiebawn<br />
+                Castle in its backdrop.
+            </div>
+
+
+
+        </td>
+        <td>
+
+            <div class="space">
+                <img id="img8" width="400" height="300" src="~/Images/silver strand malin.jpg" />
+            </div>
+
+            <div id="span8">
+                <strong>Malin Beag</strong> <br />
+
+                Silver Strand beach is one of the most dramatic beaches in Ireland<br />
+                dramatised by the surrounding high, horseshoe-shaped cliffs.<br />
+                The Bay is accessed by a steeply sloping series of steps.
+            </div>
+
+        </td>
+        <td>
+
+            <div class="space">
+                <img id="img9" width="400" height="300" src="~/Images/St Johns point.jpg" />
+            </div>
+
+            <div id="span9">
+                <strong>St. John’s Point</strong><br />
+
+                St. John’s Point is at the end of a narrow peninsula which juts<br />
+                into Donegal Bay, south of the village of Inver.<br />
+                It guides from Donegal Bay and marks the north side<br />
+                of the bay leading to Killybegs Harbour.
+            </div>
+
+
+        </td>
+    </tr>
+
+</table>
+
+
+<br />
+<br />
+<br />
+<br />
+
+@section Script{
+
+
+    <script src="~/Scripts/SiteSeeing.js"></script>
+
+}
+
+
+
+
+
+
+

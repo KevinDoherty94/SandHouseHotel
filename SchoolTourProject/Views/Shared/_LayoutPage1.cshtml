@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="~/CSS/StyleSheet1.css" rel="stylesheet" />
+    @RenderSection("Image", false)
+
+
+</head>
+<body>
+
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+
+        <span class="navbar-brand">Sand House Hotel</span>
+
+        <ul class="navbar-nav">
+
+            <li class="nav-item">
+
+
+                @Html.ActionLink("Home", "Home", "Home", null, new { @class = "nav-link" })
+            </li>
+
+            <li class="nav-item">
+
+                @Html.ActionLink("Upload an activity", "Create", "BookingActivities", null, new { @class = "nav-link" })
+            </li>
+
+            <li class="nav-item">
+
+                @Html.ActionLink("Book", "Create", "Bookings", null, new { @class = "nav-link" })
+
+            </li>
+
+
+
+            <li class="nav-item dropdown" style=" margin-left: 1800px
+">
+
+                <div class="dropdown">
+
+                    <button type="button" class="btn btn-primary bg-dark dropdown-toggle" data-toggle="dropdown">
+                        Activities and Places to see
+                    </button>
+
+                    <div class="dropdown-menu">
+                        @Html.ActionLink("Surfing", "Surfing", "Activities", null, new { @class = "dropdown-item" })
+                        @Html.ActionLink("Site Seeing", "SiteSeeing", "Activities", null, new { @class = "dropdown-item" })
+                        @Html.ActionLink("Wild Atlantic Way", "WildAtlanticWay", "Activities", null, new { @class = "dropdown-item" })
+
+                    </div>
+
+                </div>
+
+            </li>
+
+        </ul>
+    </nav>
+
+
+    <div>
+        @RenderBody()
+    </div>
+
+
+    <footer class="bg-dark">
+
+        <div id="copyright"> Copyright @DateTime.Now.Year &copy; Sand House Hotel</div>
+
+        <div class="socialMedia">
+            <a href="https://www.facebook.com/TheSandhouseHotel"> <img height="30" width="30" src="~/Images/facebook.png" /></a>
+
+        </div>
+
+        <div class="socialMedia">
+            <a href="https://www.instagram.com/sandhousehotel/"> <img height="30" width="30" src="~/Images/instagram.png" /></a>
+
+        </div>
+    </footer>
+
+
+    <script src="~/Scripts/jquery-3.6.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    @RenderSection("Script", false)
+
+</body>
+</html>

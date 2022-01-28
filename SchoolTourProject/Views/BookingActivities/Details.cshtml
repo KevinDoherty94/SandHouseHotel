@@ -1,0 +1,93 @@
+﻿@model SchoolTourProject.Models.Activity
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+@section Image{
+
+    <style>
+
+        #BookingIndex {
+            justify-content: center;
+        }
+
+
+
+        #BookingH1 {
+            font-weight: bold;
+        }
+       
+    </style>
+}
+
+
+
+<div id="BookingIndex" class="container" style="margin-top:70px">
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <div id="BookingH1" class="lead">Details of your activity</div>
+        </div>
+
+    </div>
+
+    <hr />
+    <dl class="dl-horizontal">
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Booking.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Booking.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ActivityName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ActivityName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Image)
+        </dt>
+
+        <dd>
+            @*@Html.DisplayFor(model => model.Image) This doesnt work*@
+
+            @if (Model.Image != null)
+            {
+                var imageAsBase64String = Convert.ToBase64String(Model.Image);
+                var imageAsGif = string.Format($"data:image/gif;base64,{imageAsBase64String}");
+                <img src="@imageAsGif" class="rounded" style="max-width:100px; max-height:100px" />
+            }
+            else
+            {
+                <span>No image available</span>
+            }
+        </dd>
+
+        <dt>
+
+            <label>More Information</label>
+
+        </dt>
+
+        <dd>
+            @ViewBag.InfoFromApi
+        </dd>
+
+
+
+    </dl>
+
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.ActivitiesID }, new { @class = "btn btn-primary" })
+        @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-primary" })
+    </p>
+</div>
+
