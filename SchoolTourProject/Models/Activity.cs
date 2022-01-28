@@ -27,8 +27,8 @@ namespace SchoolTourProject.Models
         [Display(Name = "Upload an image of the activity")]
         public byte[] Image { get; set; }
 
-       // [Display(Name = "Enter your booking ID")]
-       [Required(ErrorMessage ="You need to select your booking ID")]
+       [Display(Name = "Select your Booking Name")]
+       [Required(ErrorMessage ="You need to select your Booking Name")]
         public int BookingID { get; set; }
     
         public virtual Booking Booking { get; set; }

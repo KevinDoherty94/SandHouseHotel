@@ -39,11 +39,6 @@ namespace SchoolTourProject.Models
         [Required(ErrorMessage = "You need to enter your email address")]
         public string Email { get; set; }
 
-        [Display(Name = "School Name")]
-        public string SchoolName { get; set; }
-        [Display(Name = "Class Size")]
-        public int ClassSize { get; set; }
-
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Activity> Activities { get; set; }
     }

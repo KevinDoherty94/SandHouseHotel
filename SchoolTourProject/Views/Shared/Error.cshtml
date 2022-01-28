@@ -5,9 +5,23 @@
 }
 
 @*<h2>Error</h2>
-<h1>Kevins Error</h1>
-<h1>Controller - @Model.ControllerName</h1>
-<h1>Controller - @Model.ActionName</h1>
-<h1>Controller - @Model.Exception</h1>*@
+    <h1>Kevins Error</h1>
+    <h1>Controller - @Model.ControllerName</h1>
+    <h1>Controller - @Model.ActionName</h1>
+    <h1>Controller - @Model.Exception</h1>*@
+
+<div style="margin-top:50px;margin-left:600px">
+    <h2><strong>Whoops!</strong></h2>
+    <h2>Sorry but there was an error</h2>
+    <h2>
+        Not to worry though.<br />
+        You can go back to the home page by clicking @Html.ActionLink("here", "Home", "Home").<br />
+        Or feel free to click on any of the links in the navigation bar
+    </h2>
+    <h3></h3>
+</div>
+
+<br />
+<br />
 
 
